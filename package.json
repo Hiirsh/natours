@@ -1,0 +1,51 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning node, express, mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon -r dotenv/config . dotenv_config_path=dev.env",
+    "start:prod": "nodemon -r dotenv/config . dotenv_config_path=prod.env",
+    "debug": "ndb server.js",
+    "debug:prod": "ndb -r dotenv/config . dotenv_config_path=prod.env",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+  },
+  "keywords": [
+    "Hiirsh"
+  ],
+  "author": "Hiirsh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.6.0",
+    "helmet": "^6.0.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^8.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.15",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8",
+    "pug": "^3.0.2",
+    "sharp": "^0.31.1",
+    "slugify": "^1.6.5",
+    "stripe": "^10.12.0",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "dotenv": "^16.0.2",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
